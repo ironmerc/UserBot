@@ -74,7 +74,7 @@ RUN python3 -m ensurepip \
 # Clone repo and prepare working directory
 #
 
-RUN git clone -b sql-extended https://github.com/ironmerc/OpenUserBot /root/userbot
+RUN git clone -b master https://github.com/ironmerc/UserBot /root/userbot
 RUN mkdir /root/userbot/.bin
 WORKDIR /root/userbot/
 ENV PATH="/root/userbot/.bin:$PATH"
